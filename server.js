@@ -1,7 +1,7 @@
 
 const express = require('express');
 
-const sequelize = require('./db/postgresConnection')
+
 
 const { clientRoutes } = require('./routes/client/getAllUser')
 const cookieParser = require('cookie-parser')
@@ -23,10 +23,7 @@ app.use(clientRoutes)
 
 
 
-app.get('/', (req, res) => {
-    res.send('welcome to postgrs')
-    
-})
+
 
 
 app.listen(3000, () => {

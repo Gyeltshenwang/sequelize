@@ -4,7 +4,7 @@ const {getAllUsers, postUser,getUserById, updateUser, postUserlogin}= require('.
 const clientRoutes = express.Router();
 
 
-clientRoutes.get('/api/v1/users', getAllUsers)
+clientRoutes.get('/', getAllUsers)
 clientRoutes.post('/api/v1/users', postUser);
 clientRoutes.post('/api/v1/login', postUserlogin);
 
