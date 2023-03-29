@@ -20,7 +20,12 @@ const sequelize = new Sequelize(process.env.DATA_BASE, process.env.USER, process
     },
     acquireConnectionTimeout: 60000,
 });
-
+// try  {
+//      sequelize.authenticate();
+//     console.log('Connection has been established successfully.');
+// } catch (error) {
+//     console.error('Unable to connect to the database:', error);
+// }
 
 
 // let sequelize;
