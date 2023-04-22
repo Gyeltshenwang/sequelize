@@ -32,7 +32,5 @@ const User = sequelize.define('user', {
     }
 });
 User.sync();
-console.log("The table for the User model was just (re)created!");
-
 module.exports = User
 // `sequelize.define` also returns the model
