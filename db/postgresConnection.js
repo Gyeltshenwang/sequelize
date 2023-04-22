@@ -7,7 +7,7 @@ require('dotenv').config()
 
 let sequelize;
 if (process.env.NODE_ENV === "production") {
-    sequelize = new Sequelize(process.env.DATA_URL);
+    sequelize = new Sequelize(process.env.DATA_BASEURL);
 } else {
     sequelize = new Sequelize(
         process.env.DATA_BASE || 'user',
