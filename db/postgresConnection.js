@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
         process.env.PASSWORD ||'Khotsha',
         {
         host: process.env.HOST|| 'localhost',
-        dialect: process.env.DILECT ||'postgres',
+        dialect:'postgres',
         port: process.env.PORT|| 5432,
 
         },
